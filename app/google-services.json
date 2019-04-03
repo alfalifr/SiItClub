@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "683215629157",
+    "firebase_url": "https://siitclub.firebaseio.com",
+    "project_id": "siitclub",
+    "storage_bucket": "siitclub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683215629157:android:81fdc3568d03deca",
+        "android_client_info": {
+          "package_name": "sidev.techdev.siitclub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ2Od9x7Jh18JV7_LN7YZaqvb4i2_e_u4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683215629157-phqjgijidffgepemquak7v146qfstadj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
