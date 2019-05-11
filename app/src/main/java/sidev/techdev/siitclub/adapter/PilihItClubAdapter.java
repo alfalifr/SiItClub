@@ -54,7 +54,7 @@ public class PilihItClubAdapter extends BaseAdapter {
             tx.setText(name[position]);
             img.setImageResource(logo[position]);
         } else {
-            view = LayoutInflater.from(context).inflate(R.layout.list_materi, null);
+            view = LayoutInflater.from(context).inflate(R.layout.model_list_materi, null);
             TextView tx = view.findViewById(R.id.name_materi);
             TextView tx2 = view.findViewById(R.id.number_materi);
 

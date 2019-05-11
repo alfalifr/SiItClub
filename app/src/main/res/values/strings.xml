@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SiItClub</string>
+
+    <!-- Nama Club -->
+    <string name="nama_club_isad">ISAD</string>
+    <string name="nama_club_isgc">ISGC</string>
+    <string name="nama_club_isgd">ISGD</string>
+    <string name="nama_club_iswd">ISWD</string>
 </resources>
