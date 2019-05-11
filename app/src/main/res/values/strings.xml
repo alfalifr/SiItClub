@@ -6,4 +6,23 @@
     <string name="nama_club_isgc">ISGC</string>
     <string name="nama_club_isgd">ISGD</string>
     <string name="nama_club_iswd">ISWD</string>
+
+    <!-- Judul Materi -->
+    <string name="materi_judul_isad_1">Materi ISAD 1</string>
+    <string name="materi_judul_isad_2">Materi ISAD 2</string>
+    <string name="materi_judul_isad_3">Materi ISAD 3</string>
+    <string name="materi_judul_isad_4">Materi ISAD 4</string>
+    <string name="materi_judul_isad_5">Materi ISAD 5</string>
+
+    <string name="materi_judul_isgc_1">Materi ISGC 1</string>
+    <string name="materi_judul_isgc_2">Materi ISGC 2</string>
+    <string name="materi_judul_isgc_3">Materi ISGC 3</string>
+    <string name="materi_judul_isgc_4">Materi ISGC 4</string>
+
+    <string name="materi_judul_isgd_1">Materi ISGD 1</string>
+    <string name="materi_judul_isgd_2">Materi ISGD 2</string>
+    <string name="materi_judul_isgd_3">Materi ISGD 3</string>
+
+    <string name="materi_judul_iswd_1">Materi ISWD 1</string>
+    <string name="materi_judul_iswd_2">Materi ISWD 2</string>
 </resources>

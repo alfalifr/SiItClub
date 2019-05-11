@@ -15,15 +15,16 @@ import sidev.techdev.siitclub.activity.MateriActivity;
 
 public class PilihItClubAdapter extends BaseAdapter {
     Context context;
-    String[] name;
+    int[] name;
+    int[][] judul;
     int[] logo;
     String[] content;
 
-    public PilihItClubAdapter(Context context, String[] name, int[] logo, String[] content){
+    public PilihItClubAdapter(Context context, int[] name, int[][] judul, int[] logo, String[] content){
         this.context = context;
         this.name = name;
+        this.judul = judul;
         this.logo = logo;
-
     }
 
 
@@ -44,37 +45,20 @@ public class PilihItClubAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        View view;
+        View view = LayoutInflater.from(context).inflate(R.layout.grid_pilihitclub, null);
+        TextView tx = view.findViewById(R.id.name_itclub);
+        ImageView img = view.findViewById(R.id.logo_itclub);
 
-        if(logo != null) {
-            view = LayoutInflater.from(context).inflate(R.layout.grid_pilihitclub, null);
-            TextView tx = view.findViewById(R.id.name_itclub);
-            ImageView img = view.findViewById(R.id.logo_itclub);
-
-            tx.setText(name[position]);
-            img.setImageResource(logo[position]);
-        } else {
-            view = LayoutInflater.from(context).inflate(R.layout.model_list_materi, null);
-            TextView tx = view.findViewById(R.id.name_materi);
-            TextView tx2 = view.findViewById(R.id.number_materi);
-
-            tx.setText(name[position]);
-            tx2.setText(position + 1);
-        }
+        tx.setText(name[position]);
+        img.setImageResource(logo[position]);
 
         view.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if(logo != null) {
-                    Intent btn = new Intent(context, ListMateriActivity.class);
-                    btn.putExtra("judul", "Materi " + name[position]);
-                    context.startActivity(btn);
-                }else {
-                    Intent btn = new Intent(context, MateriActivity.class);
-                    btn.putExtra("judul materi", name[position]);
-                    btn.putExtra("content", content[position]);
-                    context.startActivity(btn);
-                }
+                Intent btn = new Intent(context, ListMateriActivity.class);
+                btn.putExtra("club", "Materi " + name[position]);
+                btn.putExtra("judul", judul[position]);
+                context.startActivity(btn);
             }
         });
 
