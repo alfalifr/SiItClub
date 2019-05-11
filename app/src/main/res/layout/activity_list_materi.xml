@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ListMateriActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".activity.ListMateriActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ini Judul"
-        android:textSize="20sp"
-        android:gravity="center"
         android:layout_margin="15dp"
-        />
+        android:gravity="center"
+        android:text="Ini Judul"
+        android:textSize="20sp" />
+
     <ListView
         android:id="@+id/list_materi"
         android:layout_width="match_parent"
