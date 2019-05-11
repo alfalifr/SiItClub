@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import sidev.techdev.siitclub.R;
 import sidev.techdev.siitclub.activity.ListMateriActivity;
-import sidev.techdev.siitclub.activity.MateriActivity;
 
 public class PilihItClubAdapter extends BaseAdapter {
     Context context;
@@ -45,7 +44,7 @@ public class PilihItClubAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        View view = LayoutInflater.from(context).inflate(R.layout.grid_pilihitclub, null);
+        View view = LayoutInflater.from(context).inflate(R.layout.model_grid_pilihitclub, null);
         TextView tx = view.findViewById(R.id.name_itclub);
         ImageView img = view.findViewById(R.id.logo_itclub);
 
@@ -56,7 +55,7 @@ public class PilihItClubAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 Intent btn = new Intent(context, ListMateriActivity.class);
-                btn.putExtra("club", "Materi " + name[position]);
+                btn.putExtra("club", name[position]);
                 btn.putExtra("judul", judul[position]);
                 context.startActivity(btn);
             }

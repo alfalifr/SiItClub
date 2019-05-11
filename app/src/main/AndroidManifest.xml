@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MateriActivity"></activity>
+        <activity android:name=".activity.IsiMateriActivity"></activity>
+        <activity android:name=".activity.MateriActivity" />
         <activity android:name=".activity.ListMateriActivity" />
         <activity android:name=".activity.ItClub">
             <intent-filter>

@@ -12,7 +12,7 @@ import sidev.techdev.siitclub.R;
 import sidev.techdev.siitclub.adapter.PilihItClubAdapter;
 
 
-/**
+/*
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
  * {@link OnFragmentInteractionListener} interface
