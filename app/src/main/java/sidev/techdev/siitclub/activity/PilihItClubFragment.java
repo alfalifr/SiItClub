@@ -12,7 +12,7 @@ import sidev.techdev.siitclub.R;
 import sidev.techdev.siitclub.adapter.PilihItClubAdapter;
 
 
-/**
+/*
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
  * {@link OnFragmentInteractionListener} interface
@@ -64,7 +64,13 @@ public class PilihItClubFragment extends Fragment {
     }*/
 
     GridView gridView;
-    String[] namaClub = {"ISAD", "ISGC", "ISGD", "ISWD"};
+    int[] namaClub = {R.string.nama_club_isad, R.string.nama_club_isgc, R.string.nama_club_isgd, R.string.nama_club_iswd};
+    int[][] judulMateri = {
+            {R.string.materi_judul_isad_1, R.string.materi_judul_isad_2, R.string.materi_judul_isad_3, R.string.materi_judul_isad_4, R.string.materi_judul_isad_5},
+            {R.string.materi_judul_isgc_1, R.string.materi_judul_isgc_2, R.string.materi_judul_isgc_3, R.string.materi_judul_isgc_4},
+            {R.string.materi_judul_isgd_1, R.string.materi_judul_isgd_2, R.string.materi_judul_isgd_3},
+            {R.string.materi_judul_iswd_1, R.string.materi_judul_iswd_2}
+    };
     int[] logo = {R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background};
 
 
@@ -75,7 +81,7 @@ public class PilihItClubFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_pilih_it_club, container, false);
 
         gridView = v.findViewById(R.id.gridview);
-        PilihItClubAdapter adp = new PilihItClubAdapter(getContext(), namaClub, logo, null);
+        PilihItClubAdapter adp = new PilihItClubAdapter(getContext(), namaClub, judulMateri, logo, null);
         gridView.setAdapter(adp);
 
         return v;
