@@ -28,6 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="Sign Up"
+                android:textColor="#FFF"
                 android:textSize="18sp" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
@@ -93,4 +94,13 @@
         android:layout_marginBottom="109dp"
         android:text="Forgot Password?"
         android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        app:srcCompat="@drawable/logo_isad" />
 </RelativeLayout>
