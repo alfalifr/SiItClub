@@ -71,7 +71,7 @@ public class PilihItClubFragment extends Fragment {
             {R.string.materi_judul_isgd_1, R.string.materi_judul_isgd_2, R.string.materi_judul_isgd_3},
             {R.string.materi_judul_iswd_1, R.string.materi_judul_iswd_2}
     };
-    int[] logo = {R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background};
+    int[] logo = {R.drawable.logo_isad, R.drawable.logo_isgc, R.drawable.logo_isgd, R.drawable.logo_iswd};
 
 
     @Override
