@@ -14,6 +14,12 @@ public class ListMateriActivity extends AppCompatActivity {
     ListView listview;
     String namaClub;
     int[] judulMateri;
+    int[][] isiMateri = {
+            {R.string.materi_isi_isad_1, R.string.materi_isi_isad_2, R.string.materi_isi_isad_3, R.string.materi_isi_isad_4, R.string.materi_isi_isad_5},
+            {R.string.materi_isi_isgc_1, R.string.materi_isi_isgc_2, R.string.materi_isi_isgc_3, R.string.materi_isi_isgc_4},
+            {R.string.materi_isi_isgd_1, R.string.materi_isi_isgd_2, R.string.materi_isi_isgd_3},
+            {R.string.materi_isi_iswd_1, R.string.materi_isi_iswd_2}
+    };
 
 
     @Override
@@ -31,9 +37,8 @@ public class ListMateriActivity extends AppCompatActivity {
         namaClub = getResources().getString(btn.getIntExtra("club", 0));
         judulMateri = btn.getIntArrayExtra("judul");
 
-        //ListMateriAdapter adp = new ListMateriAdapter(this, judulMateri, );
-
-
+        ListMateriAdapter adp = new ListMateriAdapter(this, judulMateri, isiMateri);
+        listview.setAdapter(adp);
 
     }
 }
